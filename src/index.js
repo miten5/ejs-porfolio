@@ -1,14 +1,35 @@
 const express = require("express");
 const app = express();
 
-app.set("view engine", "ejs");
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/../public'));
 
-app.get("/", (req, res) => {
-	//  sending rendered view as a response
-	//  res.render('location') will automatically look in the
-	// 'views' folder for the view. So the 'location' should
-	// be relative to the 'view' folder
-	res.render("pages/index");
-  });
+// Define routes for each page
+app.get('/', (req, res) => {
+  res.render('pages/home');
+});
+
+app.get('/about', (req, res) => {
+  res.render('pages/about');
+});
+
+app.get('/projects', (req, res) => {
+  // Replace with logic to fetch and pass project data
+  const projectsData = [
+    { title: 'Project 1', description: 'Description 1', image: 'project1.jpg' },
+    // Add more projects
+  ];
+  res.render('pages/projects', { projects: projectsData });
+});
+
+app.get('/services', (req, res) => {
+  // Replace with your services data
+  const servicesData = ['Service 1', 'Service 2', 'Service 3'];
+  res.render('pages/services', { services: servicesData });
+});
+
+app.get('/contact', (req, res) => {
+  res.render('pages/contact');
+});
 
 app.listen(5050);

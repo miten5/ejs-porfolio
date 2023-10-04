@@ -1,1 +1,58 @@
-<%- include('../partials/header', {header: 'Home Page'}) %>
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title: 'Home'}); %>
+    <body>
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+        <!-- Navbar -->
+
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="block-section">
+                <div class="block-section-content">
+                    <h1 class="mb-0">
+                        Miten
+                        <span class="text-primary">Patel</span>
+                    </h1>
+                    <div class="subheading mb-5">Web Application Developer</div>
+                    <!-- <div class="subheading mb-5">
+                        Scarborough, Ontario, CA M1G 3N6 · (647) 482-9880 ·
+                        <a href="mailto:patelmit3n@gmail.com">patelmit3n@gmail.com</a>
+                    </div> -->
+                    <p class="lead mb-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Add an image of yourself here -->
+                                <img src="your-image.jpg" alt="Your Name" class="img-fluid rounded-circle">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="lead">
+                                    👋 Hi there! I'm a passionate and experienced web developer who thrives on crafting top-notch websites and applications that deliver exceptional user experiences. With a proven track record of meeting project deadlines and a strong commitment to excellence, I'm dedicated to pushing the boundaries of what the web can offer.
+                                </p>
+                                <p>
+                                    🚀 My expertise primarily lies in back-end development, where I've honed my skills with PHP and MySQL. I've had the privilege of working with renowned web development frameworks like Laravel, React, and Vue, allowing me to create dynamic, feature-rich web solutions. My proficiency with version control tools such as Git ensures efficient and collaborative development.
+                                </p>
+                                <p>
+                                    🌟 I'm on a continuous journey to stay at the forefront of web technology and best practices. The digital landscape evolves rapidly, and I embrace every opportunity to learn and adapt. Challenges are my fuel, and I eagerly seek new horizons to explore and conquer.
+                                </p>
+                                <p>
+                                    💪 As a web developer, I don't just build websites; I build digital experiences that leave a lasting impression. My strong work ethic, attention to detail, and unwavering dedication to delivering results make me a reliable partner in any development project.
+                                </p>
+                            </div>
+                        </div>
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/miten5/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target="_blank" href="https://github.com/miten5"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" target="_blank" href="https://twitter.com/mit3n5"><i class="fab fa-x-twitter"></i></a>
+                        <a class="social-icon" target="_blank" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Footer-->
+            <%- include('../partials/footer') %>
+        </div>
+    </body>
+</html>

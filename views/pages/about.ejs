@@ -1,1 +1,51 @@
-About page
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title: 'Home'}); %>
+    <body>
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+        <!-- Navbar -->
+
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Interests-->
+            <section class="block-section">
+                <div class="block-section-content">
+                    <h2 class="mb-5">About me</h2>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="lead">
+                                    Hello, I'm Miten Patel, and I'm a firm believer in the power of technology and collaboration to create positive change. My journey as a web developer aligns perfectly with our mission to inspire and empower
+                                    individuals to reach their full potential.
+                                </p>
+                                <p class="lead">
+                                    In my work, I strive to provide innovative solutions that not only meet but exceed the unique needs of our customers. I am deeply committed to excellence, always pushing the boundaries to make a meaningful impact
+                                    on the lives I touch through my creations.
+                                </p>
+                                <p class="lead">
+                                    At the core of my beliefs is the strength of community and collaboration. I share the vision of creating a world where people come together, share knowledge, and support one another. Through my mission as a web
+                                    developer, I aim to contribute to building a brighter future for all, driven by inclusivity, sustainability, and a shared sense of purpose.
+                                </p>
+                                <p class="lead">
+                                    Join me in this mission to make a difference. I'm part of a diverse and passionate team dedicated to innovation and positive impact. Together, we can create meaningful change and shape a brighter future. Explore
+                                    opportunities with us and be part of something extraordinary. Your talents and ideas are what we need to thrive.
+                                </p>
+                                <div>
+                                    <a class="btn btn-secondary" href="Resume.pdf" download><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Add an image of yourself here -->
+                                <img src="images/Miten-patel.jpeg" alt="Miten Patel" class="img-fluid rounded-circle" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer-->
+            <%- include('../partials/footer') %>
+        </div>
+    </body>
+</html>

@@ -1,1 +1,61 @@
-Project page
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title: 'Projects'}); %>
+    <body>
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+        <!-- Navbar -->
+
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Interests-->
+            <section class="block-section">
+                <div class="block-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <!-- Project 1 -->
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <img src="images/projects/project1.jpg" class="card-img-top" alt="Kartmanage" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kartmanage Solutions</h5>
+                                        <p class="card-text">Working on real time project as web developer</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <img src="images/projects/project2.jpg" class="card-img-top" alt="Larawind" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Larawind</h5>
+                                        <p class="card-text">Created a Open-source Admin Panel with Laravel</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <img src="images/projects/project3.jpg" class="card-img-top" alt="Offertoday" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ofertoday</h5>
+                                        <p class="card-text">Work with other web developer on offertoday's website.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer-->
+            <%- include('../partials/footer') %>
+        </div>
+    </body>
+</html>

@@ -33,3 +33,4 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(5050);
+console.log('Server is running on  Port 5050');

@@ -21,18 +21,11 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/projects', (req, res) => {
-  // Replace with logic to fetch and pass project data
-  const projectsData = [
-    { title: 'Project 1', description: 'Description 1', image: 'project1.jpg' },
-    // Add more projects
-  ];
-  res.render('pages/projects', { projects: projectsData });
+  res.render('pages/projects');
 });
 
 app.get('/services', (req, res) => {
-  // Replace with your services data
-  const servicesData = ['Service 1', 'Service 2', 'Service 3'];
-  res.render('pages/services', { services: servicesData });
+  res.render('pages/services');
 });
 
 app.get('/contact', (req, res) => {
@@ -40,4 +33,4 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(5050);
-console.log('Server is running on  Port 5050');
+console.log('Server is running on Port 5050');
